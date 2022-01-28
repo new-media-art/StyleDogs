@@ -1,0 +1,94 @@
+
+
+body {
+    background-image: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet);
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-attachment: fixed;
+    background-size: contain;
+    opacity: 0.9;
+}
+
+#blockquote {
+    font-family: "Brush Script MT";
+
+}
+
+#CocoGamesTitleContainer {
+    background: radial-gradient(600px at 50% 50% , #fff 20%, #000 100%);
+    height: 250px;
+    border-radius: 50% 50% 0% 0%;
+
+}
+#CocoGamesTitle {
+    text-align: center;
+    font-family: 'Oswald', Helvetica, sans-serif;
+    font-size: 60px;
+    transform: skewY(-10deg);
+    letter-spacing: 4px;
+    word-spacing: -8px;
+    color: tomato;
+    text-shadow:
+            -1px -1px 0 firebrick,
+            -2px -2px 0 firebrick,
+            -3px -3px 0 firebrick,
+            -4px -4px 0 firebrick,
+            -5px -5px 0 firebrick,
+            -6px -6px 0 firebrick,
+            -7px -7px 0 firebrick,
+            -8px -8px 0 firebrick,
+            -30px 20px 40px dimgrey
+}
+
+.navbar-brand {
+    transform: translateX(-50%);
+    left: 50%;
+    position: absolute;
+}
+#finger {
+    font-size: 6rem;
+}
+.rotate  {
+    animation-name: wave-animation;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+    transform-origin: 70% 70%;
+    display: inline-block;
+}
+
+@keyframes wave-animation {
+    0% { transform: rotate( 0.0deg) }
+    10% { transform: rotate(14.0deg) }
+    20% { transform: rotate(-8.0deg) }
+    30% { transform: rotate(14.0deg) }
+    40% { transform: rotate(-4.0deg) }
+    50% { transform: rotate(10.0deg) }
+    60% { transform: rotate( 0.0deg) }
+    100% { transform: rotate( 0.0deg) }
+}
+
+.shake:hover {
+    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000px;
+    animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+    10%, 90% {
+        transform: translate3d(-2px, 0, 0);
+    }
+
+    20%, 80% {
+        transform: translate3d(3px, 0, 0);
+    }
+
+    30%, 50%, 70% {
+        transform: translate3d(-5px, 0, 0);
+    }
+
+    40%, 60% {
+        transform: translate3d(5px, 0, 0);
+    }
+}

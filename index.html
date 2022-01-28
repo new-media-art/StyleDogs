@@ -1,0 +1,770 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--favicon hund--->
+    <link href="data:image/x-icon;base64,AAABAAEAEBAQAAEABAAoAQAAFgAAACgAAAAQAAAAIAAAAAEABAAAAAAAgAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA////AAAA/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAACIAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADzmQAA+ckAALnMAACM5AAAwOEAAPABAAD8AwAAcAEAAAABAACAMQAAgfgAAOH8AADz+QAA/+MAAP/HAAD//wAA" rel="icon" type="image/x-icon" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+    <title>Style Dogs</title>
+</head>
+<body>
+
+
+<!--Offcanvas navbar-->
+<nav class="navbar navbar-light bg-transparent fixed-top">
+    <div class="container-fluid">
+
+        <a class="navbar-brand" href="index.html"><h1 class="text-white"><span class="rotate">🐶</span>Style Dogs</h1></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+
+                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">„wuff“? <span style='font-size:25px;'>&#128021;</span></i></h5>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="page2.html"><i class="fa fa-paw fa-spin" style="font-size:20px;color:brown;"></i> Hundehütte</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="page2.html"><i class="fa fa-paw fa-spin" style="font-size:20px;color:brown;"></i>  LeckerLink</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="imagesPage2" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fa fa-paw fa-spin" style="font-size:20px;color:brown;"></i>  Dogdown
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+                            <li><a class="dropdown-item" href="page2.html">„wuff“! „wuff“!</a></li>
+                            <li><a class="dropdown-item" href="page2.html"><span style='font-size:30px;'>🦴</span></a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="page2.html"><span style='font-size:30px;'>💩</span></a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</nav>
+<!--Carousel with captions-->
+<div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="images\dogOne.jpg" class="d-block w-100" alt="oil portrait of a brown dog">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>First slide label</h5>
+                <p>Some representative placeholder content for the first slide.</p>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="images/dogTwo.jpg" class="d-block w-100" alt="oil portrait of a white and a black dog">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Second slide label</h5>
+                <p>Some representative placeholder content for the second slide.</p>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="images/dogThree.jpg" class="d-block w-100" alt="portrait of a dog looking at some birds">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Third slide label</h5>
+                <p>Some representative placeholder content for the third slide.</p>
+            </div>
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
+<!--carousel end-->
+<div class="card h6 bg-transparent">
+    <div class="card-header bg-dark">
+
+
+        <div class="row">
+            <div class="col bg-primary text-white">
+                <pre>
+            /)-_-(\        /)-_-(\
+             (o o)          (o o)
+     .-----__/\o/            \o/\__-----.
+    /  __      /              \      __  \
+\__/\ /  \_\ |/                \| /_/  \ /\__/
+     \\     ||                  ||      \\
+     //     ||                  ||      //
+     |\     |\                  /|     /|
+                </pre>
+            </div>
+            <div class="col bg-dark text-white">
+                <pre>
+
+
+
+
+             .--~~,__
+:-....,-------`~~'._.'
+ `-,,,  ,_      ;'~U'
+  _,-' ,'`-__; '--.
+ (_/'~~      ''''(;
+                </pre>
+            </div>
+            <div class="col bg-primary text-white">
+                <pre>
+   |\|\
+  ..    \       .
+o--     \\    / @)
+ v__///\\\\__/ @
+   {           }
+    {  } \\\{  }
+    <_|      <_|
+                </pre>
+            </div>
+            <div class="col bg-dark text-white">
+                <pre>
+ _     /)---(\          /~~~\
+\\   (/ . . \)        /  .. \
+ \\__)-\(*)/         (_,\  |_)
+ \_       (_         /   \@/    /^^^\
+ (___/-(____) _     /      \   / . . \
+              \\   /  `    |   V\ Y /V
+               \\/  \   | _\    / - \
+                \   /__'|| \\_  |    \
+                 \_____)|_).\_).||(__V
+                </pre>
+            </div>
+        </div>
+    </div>
+
+    </div>
+
+
+<!--Blockquote-->
+    <div class="card-body">
+        <blockquote class="blockquote mb-0">
+
+            <p id="blockquote">"Es gibt keine Treue, die nicht schon gebrochen wurde, ausgenommen die eines wahrhaft treuen Hundes."</p>
+
+            <footer class="blockquote-footer text-white">Konrad Lorenz</footer>
+        </blockquote>
+    </div>
+</div>
+
+<!--Coo & Buttercups-->
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-sm-4 text-white bg-success">
+            <h2>Hallo, ich bin Coco!</h2>
+            <h5>Portrait of Coco:</h5>
+            <img src="images/websiteDOG.6.jpg" class="d-block w-50" alt="oil portrait of a dog head">
+            <p>Das ist das Gemälde, das mich zum Star gemacht hat!!</p>
+            <h3 class="mt-4 text-white bg-danger">Ist Ihr Hund der nächste Tiermodel-Superstar?</h3>
+            <p>Unsere Hunde modeln für Gucci, Versace und Yves Saint Lorraine!</p>
+
+            <!-- Gif model dog -->
+            <div class="card text-white bg-dark" style="width: auto;">
+                <img src="images/model-dog.gif" class="card-img-top" alt="Dog modeling">
+                <div class="card-body">
+                    <h5 class="card-title">Intere$$iert?</h5>
+                    <p class="card-text">Klicken Sie unten und finden Sie heraus, wie Sie und Ihr Haustier das Dolce Vita leben können!</p>
+                    <a href="#" class="btn btn-primary">Let's Go!</a>
+                </div>
+            </div>
+
+            <!--<img src="images/model-dog.gif" alt="Model dog" style="width:150px;">-->
+
+
+            <hr class="d-sm-none">
+        </div>
+        <div class="col-sm-8 text-white">
+            <h2>Servas! Ich bin Buttercups, Cocos Mutti!</h2>
+            <h5>Title description, Dec 7, 2020</h5>
+            <img src="images/websiteDOG.5.jpg" class="d-block w-50 rounded" alt="portrait of a dog looking at some birds">
+            <p>Some text..</p>
+            <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+
+            <h2 class="mt-5">Hund rettet Ente aus den Händen bösartiger Jäger!!</h2>
+            <h5>Title description, Sep 2, 2020</h5>
+            <img src="images/websiteDOG.4.jpg" class="d-block w-50 rounded" alt="painting of two hunters and a dog">
+            <p>Some text..</p>
+            <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+
+        </div>
+    </div>
+</div>
+<br>
+<!-ASCII Dogs-->
+<div class="card h6 bg-transparent">
+    <div class="card-header bg-transparent">
+
+
+        <div class="row">
+            <div class="col bg-primary text-white">
+                <pre>
+            /)-_-(\        /)-_-(\
+             (o o)          (o o)
+     .-----__/\o/            \o/\__-----.
+    /  __      /              \      __  \
+\__/\ /  \_\ |/                \| /_/  \ /\__/
+     \\     ||                  ||      \\
+     //     ||                  ||      //
+     |\     |\                  /|     /|
+                </pre>
+            </div>
+            <div class="col bg-dark text-white">
+                <pre>
+
+
+
+
+             .--~~,__
+:-....,-------`~~'._.'
+ `-,,,  ,_      ;'~U'
+  _,-' ,'`-__; '--.
+ (_/'~~      ''''(;
+                </pre>
+            </div>
+            <div class="col bg-primary text-white">
+                <pre>
+   |\|\
+  ..    \       .
+o--     \\    / @)
+ v__///\\\\__/ @
+   {           }
+    {  } \\\{  }
+    <_|      <_|
+                </pre>
+            </div>
+            <div class="col bg-dark text-white">
+                <pre>
+ _     /)---(\          /~~~\
+\\   (/ . . \)        /  .. \
+ \\__)-\(*)/         (_,\  |_)
+ \_       (_         /   \@/    /^^^\
+ (___/-(____) _     /      \   / . . \
+              \\   /  `    |   V\ Y /V
+               \\/  \   | _\    / - \
+                \   /__'|| \\_  |    \
+                 \_____)|_).\_).||(__V
+                </pre>
+            </div>
+        </div>
+    </div>
+</div>
+
+<br>
+<!--image overlay-->
+<div class="card bg-transparent text-white">
+    <img src="images/dogANDbird.jpg" class="d-block" alt="dog looking at birds">
+    <div class="card-img-overlay">
+        <h2 class="card-title text-white">Hund verliebt sich in eine Taube!!!</h2>
+        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        <p class="card-text">Last updated 3 mins ago</p>
+    </div>
+</div>
+<br>
+
+<!-ASCII Dogs 2-->
+<div class="card h6 bg-transparent">
+    <div class="card-header bg-transparent">
+
+
+        <div class="row">
+            <div class="col bg-light text-dark">
+                <pre>
+                                      .-.
+     (___________________________()6 `-,
+     (   ______________________   /''"`
+     //\\                      //\\
+     "" ""                     "" ""
+                </pre>
+            </div>
+            <div class="col bg-dark text-white">
+                <pre>
+
+
+
+
+  / \__
+  (    @\___
+  /         O
+ /   (_____/
+/_____/
+                </pre>
+            </div>
+            <div class="col bg-light text-dark">
+                <pre>
+            |\_/|        D\___/\
+            (0_0)         (0_o)
+           ==(Y)==         (V)
+----------(u)---(u)----oOo--U--oOo---
+__|_______|_______|_______|_______|___
+                </pre>
+            </div>
+            <div class="col bg-dark text-white">
+                <pre>
+     |\_/|
+     | @ @   Woof!
+     |   <>              _
+     |  _/\------____ ((| |))
+     |               `--' |
+ ____|_       ___|   |___.'
+/_/_____/____/_______|
+                </pre>
+            </div>
+        </div>
+    </div>
+</div>
+
+<br>
+
+    <!--video-->
+    <video controls autoplay loop muted>
+        <source src="images/websiteDOG.2.2jpg.mp4" type="video/mp4">
+        This browser does not display the video tag.
+    </video>
+<br>
+
+<!-ASCII Dogs 2-->
+<div class="card h6 bg-transparent">
+    <div class="card-header bg-transparent">
+
+
+        <div class="row">
+            <div class="col bg-light text-dark">
+                <pre>
+                                      .-.
+     (___________________________()6 `-,
+     (   ______________________   /''"`
+     //\\                      //\\
+     "" ""                     "" ""
+                </pre>
+            </div>
+            <div class="col bg-dark text-white">
+                <pre>
+
+
+
+
+  / \__
+  (    @\___
+  /         O
+ /   (_____/
+/_____/
+                </pre>
+            </div>
+            <div class="col bg-light text-dark">
+                <pre>
+            |\_/|        D\___/\
+            (0_0)         (0_o)
+           ==(Y)==         (V)
+----------(u)---(u)----oOo--U--oOo---
+__|_______|_______|_______|_______|___
+                </pre>
+            </div>
+            <div class="col bg-dark text-white">
+                <pre>
+     |\_/|
+     | @ @   Woof!
+     |   <>              _
+     |  _/\------____ ((| |))
+     |               `--' |
+ ____|_       ___|   |___.'
+/_/_____/____/_______|
+                </pre>
+            </div>
+        </div>
+    </div>
+</div>
+
+<br>
+<div class="container">
+    <div class="container-fluid mt-3 bg-transparent">
+        <div id="CocoGamesTitleContainer">
+        <span id="CocoGamesTitle">
+        <h1>Coco Games!</h1>
+        <p>Hallo du!<br> Ja du! Möchten Sie ein paar Spiele spielen?</p>
+        <p>Dann klick auf Coco!!! <br> Dann klick auf Coco!!! <br> Dann klick auf Coco!!! <br> Dann klick auf Coco!!! <br> Dann klick auf Coco!!!</p>
+        </span>
+
+        </div>
+
+        <div class="container-fluid";
+    <!--Coco Games-->
+
+
+        <div  id="dangerF" class="row row-cols-1">
+            <div class="col bg-danger text-center h3 text-white"><p id="dFly">Games! Games! Games!</p></div>
+        </div>
+
+
+        <div class="row row-cols-3">
+            <div id="finger" class="col bg-success text-end">click!👉</div>
+
+            <div id="x" class="col bg-trasnparent">
+                <a href="page2.html"><div class="card bg-transparent"><img class="shake"
+                                                      src="imagesPage2/flipDog - Copy.png" class="rounded mx-auto d-block"
+                ></div></a>
+
+            </div>
+            <div id="finger" class="col bg-success">👈click!</div>
+        </div>
+
+        <div class="row row-cols-1">
+            <div id="dangerF" class="col bg-danger text-center h3 text-white"><p id="dFly">Games! Games! Games!</p></div>
+        </div>
+    </div>
+</div>
+
+<!-ASCII dogs-->
+    <div class="card h6 ">
+        <div class="card-header bg-dark">
+
+
+            <div class="row">
+                <div class="col bg-primary text-white">
+                <pre>
+            /)-_-(\        /)-_-(\
+             (o o)          (o o)
+     .-----__/\o/            \o/\__-----.
+    /  __      /              \      __  \
+\__/\ /  \_\ |/                \| /_/  \ /\__/
+     \\     ||                  ||      \\
+     //     ||                  ||      //
+     |\     |\                  /|     /|
+                </pre>
+                </div>
+                <div class="col bg-dark text-white">
+                <pre>
+
+
+
+
+             .--~~,__
+:-....,-------`~~'._.'
+ `-,,,  ,_      ;'~U'
+  _,-' ,'`-__; '--.
+ (_/'~~      ''''(;
+                </pre>
+                </div>
+                <div class="col bg-primary text-white">
+                <pre>
+   |\|\
+  ..    \       .
+o--     \\    / @)
+ v__///\\\\__/ @
+   {           }
+    {  } \\\{  }
+    <_|      <_|
+                </pre>
+                </div>
+                <div class="col bg-dark text-white">
+                <pre>
+ _     /)---(\          /~~~\
+\\   (/ . . \)        /  .. \
+ \\__)-\(*)/         (_,\  |_)
+ \_       (_         /   \@/    /^^^\
+ (___/-(____) _     /      \   / . . \
+              \\   /  `    |   V\ Y /V
+               \\/  \   | _\    / - \
+                \   /__'|| \\_  |    \
+                 \_____)|_).\_).||(__V
+                </pre>
+                </div>
+            </div>
+        </div>
+    </div>
+<br>
+        <!--Jumbotron-->
+        <div class="mt-4 p-5 bg-primary text-white rounded">
+            <h1>Berühmte Hundemodelle aus der Steinzeit!</h1>
+            <p>Lorem ipsum...</p>
+        </div>
+<br>
+        <!--Card group-->
+<div class="card-group ">
+    <div class="card bg-success">
+        <img src="images/stone1.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
+    </div>
+    <div class="card bg-primary">
+        <img src="images/stone2.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
+    </div>
+    <div class="card bg-success">
+        <img src="images/stone3.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
+    </div>
+</div>
+        <br>
+<!--Second ASCII dogs-->
+<div class="card h6 bg-transparent">
+    <div class="card-header bg-dark">
+
+
+        <div class="row">
+            <div class="col bg-primary text-white">
+                <pre>
+            /)-_-(\        /)-_-(\
+             (o o)          (o o)
+     .-----__/\o/            \o/\__-----.
+    /  __      /              \      __  \
+\__/\ /  \_\ |/                \| /_/  \ /\__/
+     \\     ||                  ||      \\
+     //     ||                  ||      //
+     |\     |\                  /|     /|
+                </pre>
+            </div>
+            <div class="col bg-dark text-white">
+                <pre>
+
+
+
+
+             .--~~,__
+:-....,-------`~~'._.'
+ `-,,,  ,_      ;'~U'
+  _,-' ,'`-__; '--.
+ (_/'~~      ''''(;
+                </pre>
+            </div>
+            <div class="col bg-primary text-white">
+                <pre>
+   |\|\
+  ..    \       .
+o--     \\    / @)
+ v__///\\\\__/ @
+   {           }
+    {  } \\\{  }
+    <_|      <_|
+                </pre>
+            </div>
+            <div class="col bg-dark text-white">
+                <pre>
+ _     /)---(\          /~~~\
+\\   (/ . . \)        /  .. \
+ \\__)-\(*)/         (_,\  |_)
+ \_       (_         /   \@/    /^^^\
+ (___/-(____) _     /      \   / . . \
+              \\   /  `    |   V\ Y /V
+               \\/  \   | _\    / - \
+                \   /__'|| \\_  |    \
+                 \_____)|_).\_).||(__V
+                </pre>
+            </div>
+        </div>
+    </div>
+</div>
+<br>
+    <div class="container-fluid">
+    <!--Our painters-->
+    <div class="container-fluid text-white text-center bg-warning">
+        <h2>Lassen Sie unser bewährtes Talent Ihr Haustier in einen Superstar verwandeln!!</h2>
+    </div>
+    <div class="card-group">
+
+        <div class="card text-white bg-secondary px-2">
+            <img src="images/painter-1.jpg" class="card-img-top rounded-circle" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Jane Poodle</h5>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <a href="#" class="btn btn-primary">Hire me!</a>
+
+            </div>
+        </div>
+
+        <div class="card text-white bg-success px-2">
+            <img src="images/painter-2.jpg" class="card-img-top rounded-circle" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">David Terrier</h5>
+                <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                <a href="#" class="btn btn-primary">Hire me!</a>
+
+            </div>
+        </div>
+        <div class="card text-white bg-secondary px-2">
+            <img src="images/painter-3.jpg" class="card-img-top rounded-circle" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Gloria Husky</h5>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                <a href="#" class="btn btn-primary">Hire me!</a>
+
+            </div>
+        </div>
+        <div class="card text-white bg-success px-2">
+            <img src="images/painter-4.jpg" class="card-img-top rounded-circle" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Ana Pmeranian</h5>
+                <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p><a href="#" class="btn btn-primary">Hire me!</a>
+
+            </div>
+        </div>
+    </div>
+    </div>
+    <br>
+
+        <!-ASCII Dogs 2-->
+        <div class="card h6 bg-transparent">
+            <div class="card-header bg-transparent">
+
+
+                <div class="row">
+                    <div class="col bg-light text-dark">
+                <pre>
+                                      .-.
+     (___________________________()6 `-,
+     (   ______________________   /''"`
+     //\\                      //\\
+     "" ""                     "" ""
+                </pre>
+                    </div>
+                    <div class="col bg-dark text-white">
+                <pre>
+
+
+
+
+  / \__
+  (    @\___
+  /         O
+ /   (_____/
+/_____/
+                </pre>
+                    </div>
+                    <div class="col bg-light text-dark">
+                <pre>
+            |\_/|        D\___/\
+            (0_0)         (0_o)
+           ==(Y)==         (V)
+----------(u)---(u)----oOo--U--oOo---
+__|_______|_______|_______|_______|___
+                </pre>
+                    </div>
+                    <div class="col bg-dark text-white">
+                <pre>
+     |\_/|
+     | @ @   Woof!
+     |   <>              _
+     |  _/\------____ ((| |))
+     |               `--' |
+ ____|_       ___|   |___.'
+/_/_____/____/_______|
+                </pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <br>
+
+    <div class="container-fluid">
+    <!--footer-->
+    <footer class="bg-transparent text-center text-white">
+        <!-- Grid container -->
+        <div class="container p-4 pb-0">
+            <!-- Section: Social media -->
+            <section class="mb-4">
+                <!-- Facebook -->
+                <a
+                        class="btn btn-primary btn-floating m-1"
+                        style="background-color: #3b5998;"
+                        href="#!"
+                        role="button"
+                ><i class="fab fa-facebook-f"></i
+                ></a>
+
+                <!-- Twitter -->
+                <a
+                        class="btn btn-primary btn-floating m-1"
+                        style="background-color: #55acee;"
+                        href="#!"
+                        role="button"
+                ><i class="fab fa-twitter"></i
+                ></a>
+
+                <!-- Google -->
+                <a
+                        class="btn btn-primary btn-floating m-1"
+                        style="background-color: #dd4b39;"
+                        href="#!"
+                        role="button"
+                ><i class="fab fa-google"></i
+                ></a>
+
+                <!-- Instagram -->
+                <a
+                        class="btn btn-primary btn-floating m-1"
+                        style="background-color: #ac2bac;"
+                        href="#!"
+                        role="button"
+                ><i class="fab fa-instagram"></i
+                ></a>
+
+                <!-- Linkedin -->
+                <a
+                        class="btn btn-primary btn-floating m-1"
+                        style="background-color: #0082ca;"
+                        href="#!"
+                        role="button"
+                ><i class="fab fa-linkedin-in"></i
+                ></a>
+                <!-- Github -->
+                <a
+                        class="btn btn-primary btn-floating m-1"
+                        style="background-color: #333333;"
+                        href="#!"
+                        role="button"
+                ><i class="fab fa-github"></i
+                ></a>
+            </section>
+            <!-- Section: Social media -->
+        </div>
+        <!-- Grid container -->
+
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            © 2022 Copyright:
+            <a class="text-white" href="https://mdbootstrap.com/">Ulrich Fladl</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+    </div>
+<!--Script-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+</body>
+</html>
